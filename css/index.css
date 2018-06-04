@@ -196,19 +196,24 @@
     left: 43.5%;
     width: 13%;
 }
+#brand0{
+    top:73%;
+    left: 36%;
+    /*width: 22.34%;*/
+}
 #brand1{
     top:73%;
-    left: 34%;
+    left: 36%;
     /*width: 22.34%;*/
 }
 #brand2{
     top:73%;
-    left: 34%;
+    left: 36%;
     /*width: 32.38%;*/
 }
 #brand3{
     top:73%;
-    left: 34%;
+    left: 36%;
     /*width: 29.445%;*/
 }
 #brand4{
@@ -222,6 +227,7 @@
     left: 51%;
     text-align: left;
     min-width: 300px;
+    font-size: 50px;
 }
 .brand_w .w{
     animation:fadeInUp 1s .5s ease both;
