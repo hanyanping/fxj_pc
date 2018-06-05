@@ -63,7 +63,7 @@
     position: fixed;
     z-index: 11;
     bottom: 30px;
-    left: 35px;
+    left: 15px;
     width: 70px;
     height: 80px;
     font-size: 18px;
@@ -187,7 +187,7 @@
 }
 .logo_white{
     position: absolute;
-    left: 35px;
+    left: 15px;
     list-style-type: none;
     top: 34px;
     width: 42px;
@@ -306,7 +306,7 @@
 .bar{
     position: fixed;
     bottom: 30px;
-    right:35px;
+    right:15px;
     z-index: 99;
 }
 .bar_box{
@@ -319,17 +319,17 @@
 }
 .bar_list1{
     display: none;
-    width: 130px;
-    height: 165px;
+    width: 1.30rem;
+    height: 1.65rem;
     background-color: #ffffff;
     margin-right:16px;
-    border-radius: 5px;
+    border-radius: 20px;
     text-align: center;
     position: relative;
 }
 .bar_list2{
-    width: 50px;
-    height: 162px;
+    width:0.5rem;
+    height: 1.62rem;
     background-color: #05a19a;
     border-radius: 30px;
     text-align: center;
@@ -343,7 +343,7 @@ bar_list2:hover{
     width: 95px;
     height: 95px;
     margin-top: 15px;
-    margin-bottom: 10px
+    margin-bottom: 5px
 }
 .bar_list2 .kefu{
     width: 26px;

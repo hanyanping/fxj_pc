@@ -31,11 +31,27 @@
 .black .logo_b{
     opacity: 1;
 }
+.shodowBox{
+    height:220px;
+    min-width:15%;
+    position:fixed;
+    background: rgba(255, 255, 255,0);
+    z-index: 300;
+    box-shadow: 0 20px 17px -8px #fff inset;;//边框内阴影
+    /*box-shadow: 0px 0 0 #fff,*/
+    /*!*//左边阴影*!*/
+    /*0 0px 0px 0 #fff inset,*/
+    /*!*//顶部阴影*!*/
+    /*0 2px 15px #fff inset,*/
+    /*!*/底部阴影*!*/
+    /*0 0px 0px #fff inset;*/
+/*!*//右边阴影*!*/
+}
 .buttonBox{
     position: fixed;
     left: 36%;
-    bottom: 76px;
-    z-index: 11;
+    bottom: 56px;
+    z-index: 100;
 }
 .push_icon{
     position: absolute;
@@ -132,7 +148,6 @@
 .section_img{ 
     width: 100%;
     height:100%;
-    background: url(/Static/newpc/images/2.jpg) no-repeat center;
     background-size: 100%;
 }
 .section_vedio{
@@ -156,39 +171,14 @@
 .imgsrc4{
     background: url(../images/beijing_4.png) no-repeat center;
 }
-.imgsrc5{
-    background: url(/Static/newpc/images/5.jpg) no-repeat center;
-}
-.pro_img8{
-    background: url(/Static/newpc/images/huaping.jpg) no-repeat center;
-}
-.pro_img7{
-    background: url(/Static/newpc/images/lvzhi.jpg) no-repeat center;
-}
-.pro_img6{
-    background: url(/Static/newpc/images/lipin.jpg) no-repeat center;
-}
-.pro_img5{
-    background: url(/Static/newpc/images/alpha.jpg) no-repeat center;
-}
-.pro_img4{
-    background: url(/Static/newpc/images/zhiai.jpg) no-repeat center;
-}
-.pro_img3{
-    background: url(/Static/newpc/images/mini.jpg) no-repeat center;
-}
-.pro_img2{
-    background: url(/Static/newpc/images/hunhe.jpg) no-repeat center;
-}
-.pro_img1{
-    background: url(/Static/newpc/images/jianhua.jpg) no-repeat center;
-}
+
 .w{
     width: 100%;
     font-weight: normal;
     font-stretch: normal;
-    letter-spacing: 17px;
+    letter-spacing: 13px;
     color: #ffffff;
+    font-weight: 800;
 }
 .w6{
     position: absolute;
@@ -517,18 +507,41 @@ div.showFoot{
     padding-left: 35px;
     height:220px;
     overflow: hidden;
+}
+.listMobileData{
+    position: fixed;
+    width: 100%;
+    color: #05a19a;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 15px;
+    height:220px;
+    overflow: hidden;
+    background: rgba(255,255,255,1);
+    z-index: 10;
+    bottom: 0;
 
 }
-.listData ul li {
+.listMobileData .shodowBox,.listMobileData .shodowBottm{
+    width: 100%;
+    height:100px;
+}
+.shodowBottm{
+    position:fixed;
+    background: rgba(255, 255, 255,0);
+    z-index: 10;
+    box-shadow: 2px -10px 7px  #fff ;;//边框阴影
+}
+.listData ul li ,.listMobileData ul li{
     padding: 14px 0;
     display:flex;
 }
-.listData img{
+.listData img,.listMobileData img{
     height: 40px;
     width: 40px;
     margin-right: 10px;
 }
-.listData .name{
+.listData .name,.listMobileData .name{
     color: #929292;
 }
 .nameBox{
@@ -541,7 +554,7 @@ div.showFoot{
     display: inline-block;
     font-size: 16px;
     color: #fff;
-    letter-spacing: 8px;
+    letter-spacing: 2px;
     margin-bottom: 28px;
     max-width:600px;
 }
@@ -768,10 +781,10 @@ a.btnw span::after, a.btnw span::before{
         right: 10px;
     }
     .brand{
-        font-size: 50px;
+        font-size: .5rem;
     }
     . w{
-        font-size: 50px;
+        font-size: .5rem;
     }
 
 }
@@ -780,13 +793,13 @@ a.btnw span::after, a.btnw span::before{
         right: 10px;
     }
     .brand{
-        font-size: 38px;
+        font-size: 0.38rem;
     }
-    #brand1, #brand2 ,#brand3{
-        font-size: 38px;
+    #brand0, #brand1, #brand2 ,#brand3{
+        font-size: .38rem;
     }
     .visite {
-        font-size: 13px;
+        font-size: 0.13rem;
         max-width:460px;
     }
 
@@ -796,11 +809,11 @@ a.btnw span::after, a.btnw span::before{
         right: 10px;
     }
     .brand{
-        font-size: 34px;
+        font-size: 0.34rem;
         left: 38%
     }
-    #brand1, #brand2 ,#brand3{
-        font-size: 34px;
+    #brand0, #brand1, #brand2 ,#brand3{
+        font-size: 0.34rem;
         left: 16%
     }
 
@@ -815,37 +828,36 @@ a.btnw span::after, a.btnw span::before{
         right: 10px;
     }
     .brand{
-        font-size: 28px;
+        font-size: 0.34rem;
         left: 32%
     }
-    #brand1, #brand2 ,#brand3{
-        font-size: 28px;
-        left: 7%
+    #brand0, #brand1, #brand2 ,#brand3{
+        font-size: 0.34rem;
+        left: 15px;
+        top:56%;
     }
 
     .visite {
-        font-size: 12px;
+        font-size: 0.13rem;
     }
 
 }
  @media screen and (max-width: 400px){
      .brand{
-         font-size: 18px;
+         font-size: 0.34rem;
      }
-     #brand1,#brand2,#brand3,#brand4,#brand5{
-        /*width: 300px;*/
-        left: 50%;
-        top:50%;
-        transform: translate(-50%,-50%);
+     #brand0, #brand1,#brand2,#brand3{
+         font-size: 0.34rem;
+        left: 15px;
+        top:56%;
     }
     .visite {
-        font-size: 12px;
+        font-size: 0.13rem;
     }
     #product0,#product1,#product2,#product3,#product4,#product5,#product6,#product7{
         width: 300px;
         left: 50%;
         top:50%;
-        transform: translate(-50%,-50%);
     }
 } 
 .foot{

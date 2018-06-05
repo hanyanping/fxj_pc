@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 }
-
+html { font-size: 625%; /* 10 ÷ 16 × 100% = 62.5% */ }
 img {
 	width: 100%;
 	vertical-align: middle;
@@ -22,7 +22,7 @@ li {
 }
 
 body {
-	font-family: pingfangSC, "宋体","Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-family: pingfangSC,"Microsoft YaHei",Arial,Helvetica,sans-serif;
 }
 
 .tranY {
@@ -121,7 +121,7 @@ body {
 .foot {
 	height: 70vh;
 	position: relative;
-	min-width: 1100px;
+	/*min-width: 1100px;*/
 	min-height: 400px;
 }
 
@@ -246,12 +246,14 @@ body {
 .totop {
 	position: absolute;
 	right: 35px;
-	margin-top: 20px;
 	text-align: center;
 	cursor: pointer;
 	color: #000;
 }
+.showMobile .totop{
+	bottom: 156px;
 
+}
 .totopAnimate {
 	animation: fadeInUp 1s .2s ease both;
 	-webkit-animation: fadeInUp 1s .2s ease both;
@@ -302,7 +304,9 @@ body {
 	height: 17vh;
 	background: #fff;
 }
-
+.showMobile .foot_bottom{
+	padding-right:30px;
+}
 
 /*.fb_top{
     margin-top: 10vh;
@@ -317,7 +321,7 @@ body {
 
 .foot_left {
 	width: 20%;
-	float: left;
+	/*float: left;*/
 	padding-left: 0px;
 	box-sizing: border-box;
 	text-align: center;
@@ -357,11 +361,12 @@ body {
 .story {
 	display: -webkit-flex;
 	display: flex;
+	margin-top:-6px;
 }
 
 .erweimaCodeText {
-	height: 115px;
-	margin-top: 32px;
+	height: 83px;
+	margin-top: 22px;
 	line-height: 30px;
 	letter-spacing: 0px;
 	color: #05a19a;
@@ -377,11 +382,32 @@ body {
 }
 
 .erweimaCode {
-	height: 115px;
-	width: 115px;
+	height: 90px;
+	width: 90px;
 	margin-right: 10px;
 }
-
+.showMobile{
+	position:relative;
+	padding: 15px 0 0 15px;
+	width:100%;
+}
+.showMobile .foot_left {
+	width: 128px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.showMobile .foot_logo {
+	width: 128px;
+	height: 28px;
+	display: block;
+	margin-bottom: 15px;
+}
+.showMobile .product{
+	margin-top: 20px;
+}
+.showMobile .story{
+	margin-top: 26px;
+}
 .conimg {
 	width: 40px;
 	opacity: .6;
@@ -414,35 +440,35 @@ body {
 	font-weight: bold;
 }
 
-.foot_body ul {
+.foot ul {
 	color: #05a19a;
 	line-height: 22px;
-	letter-spacing: 3px;
-	font-size: 12px;
-	/*width: 100px;*/
+	font-size: .13rem;
 }
 
-.foot_body ul li a {
+.foot ul li a {
 	color: #666;
 }
 
-.foot_body ul li:hover a {
+.foot ul li:hover a {
 	color: #000;
 }
 
-.foot_body ul li:first-child {
+.foot ul li:first-child {
 	font-size: 16px;
 	margin-bottom: 12px;
 	font-weight: bold;
 	color: #000;
 	display: inline-block;
 }
-
+.foot .showMobile ul li:first-child{
+	margin-bottom: 6px;
+}
 .foot_bottom {
 	color: #000;
 	letter-spacing: 2px;
 	text-align: center;
-	line-height: 28px;
+	line-height: 22px;
 	display: -webkit-box;
 	display: flex;
 	justify-content: center;
