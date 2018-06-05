@@ -22,7 +22,7 @@
         <div class="head_top">
             <div class="head">
                 <div>
-                    <img src="./images/shangfan.png" class="logo_white logo_w">
+                    <img src="./images/logo.png" class="logo_white logo_w">
                 </div>
                 <ul id="menu" class="menu menu1 ">
                     <li><a id="brandPage" class="menua" href="#"><span class="c-menu__inner">享健康 快分享</span></a></li>
@@ -123,7 +123,7 @@
             <div class="foot_body">
                 <div class="forflex">
                     <div class="foot_left fb_top">
-                        <!--<img class="foot_logo" src="//static2.flowerplus.cn/Static/newpc/images/logo-b.svg">-->
+                        <img class="foot_logo" src="./images/logoOne.png">
                         <img src="./images/weixin_hei.png" class="weixinCode">
                     </div>
                     <div class="foot_middle fb_top">
@@ -159,7 +159,7 @@
         </div>
         <div class="showMobile">
             <div class="foot_left fb_top">
-                <img class="foot_logo" src="//static2.flowerplus.cn/Static/newpc/images/logo-b.svg">
+                <img class="foot_logo" src="./images/logoOne.png">
                 <img src="./images/weixin_hei.png" class="weixinCode">
             </div>
             <div>
@@ -417,8 +417,10 @@
                     pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
                     if(num == 2){
                         $(".paging").css({"color":"#232323"})
+                        $(".logo_white ").attr("src",'./images/logoOne.png')
                     }else{
                         $(".paging").css({"color":"#fff"})
+                        $(".logo_white ").attr("src",'./images/logo.png')
                     }
                     if(pagingMoveData<0){
                         pagingMoveData = 0;
@@ -531,8 +533,10 @@
                 pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
                 if(num == 2){
                     $(".paging").css({"color":"#232323"})
+                    $(".logo_white ").attr("src",'./images/logoOne.png')
                 }else{
                     $(".paging").css({"color":"#fff"})
+                    $(".logo_white ").attr("src",'./images/logo.png')
                 }
                 if(pagingMoveData<0){
                     pagingMoveData = 0;
@@ -569,9 +573,11 @@
                 $('.head').removeClass('black');
             }
             if(index == 2){
-                $(".paging").css({"color":"#232323"})
+                $(".paging").css({"color":"#232323"});
+                $(".logo_white ").attr("src",'./images/logoOne.png')
             }else{
                 $(".paging").css({"color":"#fff"})
+                $(".logo_white ").attr("src",'./images/logo.png')
             }
             $(".menu li").eq(num).addClass('current').siblings().removeClass('current')
             pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
@@ -599,9 +605,11 @@
                 $('.head').removeClass('black');
             }
             if(num == 2){
-                $(".paging").css({"color":"#232323"})
+                $(".paging").css({"color":"#232323"});
+                $(".logo_white ").attr("src",'./images/logoOne.png')
             }else{
                 $(".paging").css({"color":"#fff"})
+                $(".logo_white ").attr("src",'./images/logo.png')
             }
             pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
             if(pagingMoveData<0){
@@ -639,8 +647,10 @@
             }, 1000);
             if(num == 2){
                 $(".paging").css({"color":"#232323"})
+                $(".logo_white ").attr("src",'./images/logoOne.png')
             }else{
                 $(".paging").css({"color":"#fff"})
+                $(".logo_white ").attr("src",'./images/logo.png')
             }
             pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
             if(pagingMoveData<0){

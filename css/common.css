@@ -328,8 +328,8 @@ body {
 }
 
 .foot_logo {
-	width: 128px;
-	height: 28px;
+	width: 83px;
+	height: 25px;
 	display: block;
 	margin: 0 auto 50px;
 }
@@ -397,8 +397,8 @@ body {
 	text-align: center;
 }
 .showMobile .foot_logo {
-	width: 128px;
-	height: 28px;
+	width: 83px;
+	height: 25px;
 	display: block;
 	margin-bottom: 15px;
 }
