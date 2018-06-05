@@ -160,16 +160,16 @@
     overflow: hidden;
 }
 .imgsrc1{
-    background: url(../images/beijing_1.png) no-repeat center;
+    background: url(../images/beijing_1.png) no-repeat center center;
 }
 .imgsrc2{
-    background: url(../images/beijing_2.png) no-repeat center;
+    background: url(../images/beijing_2.png) no-repeat center center;
 }
 .imgsrc3{
-    background: url(../images/beijing_3.png) no-repeat center;
+    background: url(../images/beijing_3.png) no-repeat center center;
 }
 .imgsrc4{
-    background: url(../images/beijing_4.png) no-repeat center;
+    background: url(../images/beijing_4.png) no-repeat center center;
 }
 
 .w{
