@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681d8a12-a169-46c5-8e1e-1a0d2fef969c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/head.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/head.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/erweima_hei.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/erweima_hei.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/kefu_bai.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/kefu_bai.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/kefu_hei.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/kefu_hei.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logoOne.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logoOne.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/weixin_hei.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/weixin_hei.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/weixin_xuanzhong.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/weixin_xuanzhong.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website.html" beforeDir="false" afterPath="$PROJECT_DIR$/website.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="website.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="website.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="309" column="81" selection-start-line="309" selection-start-column="81" selection-end-line="309" selection-end-column="81" />
+            <state relative-caret-position="408">
+              <caret line="308" column="79" selection-start-line="308" selection-start-column="79" selection-end-line="308" selection-end-column="79" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -74,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="head.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/head.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
-              <caret line="311" column="18" lean-forward="true" selection-start-line="311" selection-start-column="18" selection-end-line="311" selection-end-column="18" />
+              <caret line="345" column="14" selection-start-line="345" selection-start-column="14" selection-end-line="345" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -132,9 +122,9 @@
       <find>visite</find>
       <find>bar_list1</find>
       <find>kefu</find>
-      <find>.bar_list1</find>
       <find>.bar_list2</find>
       <find>.bar_box</find>
+      <find>.bar_list1</find>
       <find>kefuBox</find>
     </findStrings>
   </component>
@@ -147,8 +137,8 @@
         <option value="$PROJECT_DIR$/aa.html" />
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/css/index.css" />
-        <option value="$PROJECT_DIR$/css/head.css" />
         <option value="$PROJECT_DIR$/website.html" />
+        <option value="$PROJECT_DIR$/css/head.css" />
       </list>
     </option>
   </component>
@@ -218,12 +208,12 @@
       <updated>1528074379468</updated>
       <workItem from="1528074381996" duration="14794000" />
       <workItem from="1528160821885" duration="19135000" />
-      <workItem from="1528247910239" duration="20514000" />
+      <workItem from="1528247910239" duration="21307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54443000" />
+    <option name="totallyTimeSpent" value="55236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -364,13 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -378,17 +361,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/head.css">
+    <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
-          <caret line="311" column="18" lean-forward="true" selection-start-line="311" selection-start-column="18" selection-end-line="311" selection-end-column="18" />
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="309" column="81" selection-start-line="309" selection-start-column="81" selection-end-line="309" selection-end-column="81" />
+        <state relative-caret-position="408">
+          <caret line="308" column="79" selection-start-line="308" selection-start-column="79" selection-end-line="308" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -401,6 +384,13 @@
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/head.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="345" column="14" selection-start-line="345" selection-start-column="14" selection-end-line="345" selection-end-column="14" />
         </state>
       </provider>
     </entry>
