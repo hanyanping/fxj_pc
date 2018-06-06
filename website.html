@@ -49,10 +49,11 @@
             <div class="bar">
                 <ul class="bar_box">
                     <li class="bar_list1">
-                        <img src="./images/erweima.png" class="code">
-                        <p>微信扫描二维码</p>
-                        <p>关注分享家微信号</p>
-                        <span class="sanjiao"></span>
+                        <img class='showImg'src="./images/hezuo.png">
+                        <!--<img src="./images/erweima.png" class="code">-->
+                        <!--<p>微信扫描二维码</p>-->
+                        <!--<p>关注分享家微信号</p>-->
+                        <!--<span class="sanjiao"></span>-->
                     </li>
                     <li class="bar_list2">
                         <img src="./images/erweima_bai.png" class="code hoverImg">
@@ -87,20 +88,16 @@
                     </div>
                 </div>
                 <div class="section">
-                    <div class="listData">
-                        <div  class="shodowBox" ></div>
-                        <marquee direction="up" loop="-1" height="220" hspace="10">
-                            <ul class="listUl">
+                    <div class="listData" id="news">
+                            <ul class="listUl"  style="margin-top:0!important">
                             </ul>
-                        </marquee>
                     </div>
                     <div class="listMobileData">
-                        <div  class="shodowBox" ></div>
-                        <marquee direction="up" loop="-1" height="100" hspace="10">
-                            <ul class="listUl">
+                        <!--<div  class="shodowBox" ></div>-->
+                        <div direction="up" loop="-1" height="100" hspace="10">
+                            <ul class="listUl"  style="margin-top:0!important">
                             </ul>
-                        </marquee>
-                        <div  class="shodowBottm" ></div>
+                        </div>
                     </div>
                     <div class="section_img imgsrc3 load"></div>
                     <div id="brand2" class="brand tranY">
@@ -112,7 +109,7 @@
                     <div class="section_img imgsrc4 load"></div>
                     <div id="brand3" class="brand tranY">
                         <p data-img="" id="word3" class="w">分享家简介</p>
-                        <p class="visite" style="margin-top:26px;" >分享家专注于搭建互联网保险营销推广平台，以强大的技术服务能力为平台会员提供定制化健康险产品，通过大数据技术和丰富的营销工具帮助平台会员提升触客、拓客能力。</p>
+                        <p class="visite" style="margin-top:28px;" >分享家专注于搭建互联网保险营销推广平台，以强大的技术服务能力为平台会员提供定制化健康险产品，通过大数据技术和丰富的营销工具帮助平台会员提升触客、拓客能力。</p>
                     </div>
                 </div>
             </div>
@@ -186,13 +183,10 @@
         </div>
     </div>
 </div>
-
 <div class="popup">
     <div class="mask"></div>
     <div class="popcontent"><img class="popimg" src="//static2.flowerplus.cn/Static/newpc/images/ewm.jpg"></div>
 </div>
-
-
 
 <script type="text/javascript">
     // home page tab track $pageview
@@ -221,7 +215,6 @@
 </script>
 <script>
     $(window).resize(function() {
-
         var width = $(this).width();
         var height = $(this).height();
         var rat = width/height;
@@ -236,27 +229,49 @@
             })
         }
     });
-    $(function(){
-        function browserRedirect() {
-            var sUserAgent = navigator.userAgent.toLowerCase();
-            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-            var bIsAndroid = sUserAgent.match(/android/i) == "android";
-            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-            var isPc = '';
-            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-                isPc = 0;//手机
-            } else {
-                isPc = 1;//pc
-            }
-            return isPc
+    function autoScroll(obj){
+        $(obj).find('ul li').css({
+            opacity: 1
+        });
+        $(obj).find('ul li:first').animate({
+            opacity: 0
+        },1000);
+        setTimeout(function(){
+            $(obj).find('ul').animate({
+                marginTop: '-72px',
+            },1000,function(){
+                $(this).css({marginTop : "0px"});
+                var li  =$(obj).find('ul').children().first().clone()
+                $(obj).find('ul li:last').after(li );
+                $(obj).find('ul li').eq(1).animate({
+                    opacity: 0
+                },1000);
+                $(obj).find("ul li:first").remove();
+            })
+        },1000)
+    }
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        var isPc = '';
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            isPc = 0;//手机
+        } else {
+            isPc = 1;//pc
         }
+        return isPc
+    }
+    $(function(){
+
         var device = browserRedirect();
-        var arrData = [{"name":"nike",'title': '刚分享了一个健康保健XX险','icon':'./images/icon1.png'},{"name":"nike",'title': '刚分享了一个健康保健XX险','icon':'./images/icon2.png'},{"name":"nike",'title': '刚分享了一个健康保健XX险','icon':'./images/icon3.png'},{"name":"nike",'title': '刚分享了一个重疾险','icon':'./images/icon4.png'}];
+        var arrData = [{"name":"nike1",'title': '刚分享了一个健康保健XX险','icon':'./images/icon1.png'},{"name":"nike2",'title': '刚分享了一个健康保健XX险','icon':'./images/icon2.png'},{"name":"nike3",'title': '刚分享了一个健康保健XX险','icon':'./images/icon3.png'},{"name":"nike4",'title': '刚分享了一个重疾险','icon':'./images/icon4.png'}];
         var str = '';
         for(let i in arrData){
             str+= '<li>' +
@@ -267,7 +282,8 @@
                 '</div>' +
                 '</li>'
         }
-        $(".listUl").append($(str))
+        $(".listUl").append($(str));
+        setInterval('autoScroll("#news")',2000);
         var height = (parseInt(($(document.body).height()) -( $(".listData").height())))/2+'px';
         $(".listData").css("top",height)
         $(".weixinCode").mouseenter(function(){
@@ -277,11 +293,11 @@
             $(this).attr("src",'./images/weixin_hei.png')
         })
         $(".hoverImg").mouseenter(function(){
-            $(".sanjiao").css({"top": '20px'})
-            $(".bar_list1").css({display:'block'})
-            $(this).parent().css({"margin-left":0,"color": "#232323"});
+            $(".bar_list1").css({display:'block',"height":"162px","width": "132px"})
+            $(".bar_list1").find("img").attr("src",'./images/erweimaBig.png');
+            $(this).parent().css({"margin-left":0,"color": "#dcdddd"});
             $(this).attr("src",'./images/erweima_hei.png')
-            $(".codeText").css({"color":"#232323"})
+            $(".codeText").css({"color":"#dcdddd"})
         })
         $(".hoverImg").mouseleave(function(){
             $(".bar_list1").css({display:'none'})
@@ -290,17 +306,31 @@
             $(this).attr("src",'./images/erweima_bai.png')
         })
         $(".kefuBox").mouseenter(function(){
-            $(".sanjiao").css({"top": '106px'})
-            $(".bar_list1").css({display:'block'})
-            $(".kefuText").css({"color":"#232323"})
+            $(".bar_list1").css({display:'block',"height":"162px","width": "162px"})
+            $(".bar_list1").find("img").attr("src",'./images/hezuo.png')
+            $(".kefu").attr("src",'./images/kefu_hei.png');
+            $(".bar_list1").find("img").css({})
+            $(".kefuText").css({"color":"#dcdddd"})
             $(this).parent().css({"margin-left":0});
-            $(".kefu").attr("src",'./images/kefu_hei.png')
+
         })
         $(".kefuBox").mouseleave(function(){
             $(".bar_list1").css({display:'none'})
             $(".kefuText").css({"color":"#fff"})
-            $(this).parent().css({"margin-left":"146px","color": "#fff"});
+            $(this).parent().css({"margin-left":"16px","color": "#fff"});
             $(".kefu").attr("src",'./images/kefu_bai.png')
+        })
+        $(".push_icon").mouseenter(function(){
+           $(this).css({'background':"url('./images/xiafan.png') no-repeat center center",'background-size': '100%'})
+        })
+        $(".push_icon").mouseleave(function(){
+            $(this).css({'background':"url('./images/xiafanOne.png') no-repeat center center",'background-size': '100%'})
+        })
+        $(".down_icon").mouseenter(function(){
+            $(this).css({'background':"url('./images/shangfanTwo.png') no-repeat center center",'background-size': '100%'})
+        })
+        $(".down_icon").mouseleave(function(){
+            $(this).css({'background':"url('./images/shangfan.png') no-repeat center center",'background-size': '100%'})
         })
         $('.down_icon').hide();
         var $paging   = $('.paging'),
@@ -471,7 +501,7 @@
                     return;
                 }
                 if(delta>0){//向上滚动
-                    console.log(num)
+                    $('.section').eq(num).removeClass('active');
                     if (num < 1) {
                         return;
                     }
@@ -482,23 +512,46 @@
                     }else{
                         $('.head').removeClass('black');
                     }
-                    $('.section').eq(num).removeClass('active');
+
                     if(num == 1){
                         $('.down_icon').hide();
                     }
                     num--;
                     $('.brand').removeClass('brand_w');
                     $('#brand'+num).addClass('brand_w');
-                    $(".menu li").eq(num).addClass('current').siblings().removeClass('current')
+                    $(".menu li").eq(num).addClass('current').siblings().removeClass('current');
+                    console.log(num);
+                    var time;
+
+                    if(num == 1){
+                        time = 200;
+                    }else{
+                        time = 500;
+                    }
                     setTimeout(function () {
                         isMoving = true;
-                    }, 1000);
+                        pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
+                        if(num == 2){
+                            $(".paging").css({"color":"#232323"})
+                            $(".logo_white ").attr("src",'./images/logoOne.png')
+                        }else{
+                            $(".paging").css({"color":"#fff"})
+                            $(".logo_white ").attr("src",'./images/logo.png')
+                        }
+                        if(pagingMoveData<0){
+                            pagingMoveData = 0;
+                        }
+                        $(".currentul").animate({
+                            'margin-top' : -pagingMoveData + 'px'
+                        }, aniSpeed);
+                    }, time);
                 }else if(delta<0){//向下滚动
                     num++;
                     if (num > secNum) {
                         num = secNum;
                         return;
                     }
+                    $('.section').eq(num).addClass('active');
                     if (num >= secNum - 1) {
                         if (num == secNum) {
                             $('.push_icon').hide();
@@ -509,37 +562,34 @@
                     }else{
                         $('.head').removeClass('black');
                     }
-                    $('.section').eq(num).addClass('active');
-                    /*var isLoad = $('.imgsrc'+(num+1)).attr('isLoaded');
-                     if(!isLoad){
-                     var imgSrc = $('.imgsrc'+(num+1)).attr('data-img');
-                     $('.imgsrc'+(num+1)).attr('src',imgSrc);
-                     $('.imgsrc'+(num+1)).attr('isLoaded', true);
-                     }*/
                     $('.brand').removeClass('brand_w');
                     $('#brand'+num).addClass('brand_w');
                     // $('.nav li').eq(num).addClass('check').siblings().removeClass('check');
-                    $(".menu li").eq(num).addClass('current').siblings().removeClass('current')
+                    $(".menu li").eq(num).addClass('current').siblings().removeClass('current');
                     setTimeout(function () {
                         isMoving = true;
-                    }, 1000);
+
+                    }, 500);
                     $('.down_icon').show();
+                    pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
+                    if(num == 2){
+                        setTimeout(function () {
+                            $(".logo_white ").attr("src",'./images/logoOne.png')
+                        }, 500);
+                        $(".paging").css({"color":"#232323"})
+                    }else{
+                        $(".paging").css({"color":"#fff"})
+                        $(".logo_white ").attr("src",'./images/logo.png')
+                    }
+                    if(pagingMoveData<0){
+                        pagingMoveData = 0;
+                    }
+                    $(".currentul").animate({
+                        'margin-top' : -pagingMoveData + 'px'
+                    }, aniSpeed);
                 }
                 isMoving = false;
-                pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
-                if(num == 2){
-                    $(".paging").css({"color":"#232323"})
-                    $(".logo_white ").attr("src",'./images/logoOne.png')
-                }else{
-                    $(".paging").css({"color":"#fff"})
-                    $(".logo_white ").attr("src",'./images/logo.png')
-                }
-                if(pagingMoveData<0){
-                    pagingMoveData = 0;
-                }
-                $(".currentul").animate({
-                    'margin-top' : -pagingMoveData + 'px'
-                }, aniSpeed);
+
             }
         }
 
@@ -568,9 +618,13 @@
             }else{
                 $('.head').removeClass('black');
             }
+            console.log(index)
             if(index == 2){
                 $(".paging").css({"color":"#232323"});
-                $(".logo_white ").attr("src",'./images/logoOne.png')
+                setTimeout(function(){
+                    $(".logo_white ").attr("src",'./images/logoOne.png')
+                },300)
+
             }else{
                 $(".paging").css({"color":"#fff"})
                 $(".logo_white ").attr("src",'./images/logo.png')
@@ -600,12 +654,21 @@
             }else{
                 $('.head').removeClass('black');
             }
-            if(num == 2){
+            var time;
 
+            if(num == 1){
+                time = 200;
+            }else{
+                time = 500;
+            }
+            if(num == 2){
+                setTimeout(function () {
+                    if(device == 1){
+                        $(".logo_white ").attr("src",'./images/logoOne.png')
+                    }
+                }, 500);
                 $(".paging").css({"color":"#232323"});
-                if(device == 1){
-                    $(".logo_white ").attr("src",'./images/logoOne.png')
-                }
+
             }else{
                 $(".paging").css({"color":"#fff"})
                 if(device == 1){
@@ -623,7 +686,6 @@
         })
 
         $('.down_icon').click(function(){
-            console.log(num)
             if (num < 1) {
                 return;
             }
@@ -646,10 +708,13 @@
             setTimeout(function () {
                 isMoving = true;
             }, 1000);
+
             if(num == 2){
                 $(".paging").css({"color":"#232323"})
                 if(device == 1){
-                    $(".logo_white ").attr("src",'./images/logoOne.png')
+                    setTimeout(function () {
+                        $(".logo_white ").attr("src",'./images/logoOne.png')
+                    }, 200);
                 }
             }else{
                 $(".paging").css({"color":"#fff"})

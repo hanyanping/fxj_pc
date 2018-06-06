@@ -39,13 +39,13 @@
     z-index: 300;
     box-shadow: 0 20px 17px -8px #fff inset;;//边框内阴影
     /*box-shadow: 0px 0 0 #fff,*/
-    /*!*//左边阴影*!*/
+    /*//左边阴影*!*!*/
     /*0 0px 0px 0 #fff inset,*/
-    /*!*//顶部阴影*!*/
+    /*//顶部阴影*!*!*/
     /*0 2px 15px #fff inset,*/
-    /*!*/底部阴影*!*/
+    /*/底部阴影*!*!*/
     /*0 0px 0px #fff inset;*/
-/*!*//右边阴影*!*/
+/*//右边阴影*!*!*/
 }
 .buttonBox{
     position: fixed;
@@ -55,17 +55,17 @@
 }
 .push_icon{
     position: absolute;
-    width: 26px;
-    height: 26px;
+    width: 34px;
+    height: 34px;
     cursor: pointer;
-    background: url("../images/xiafan.png") no-repeat center center;
+    background: url("../images/xiafanOne.png") no-repeat center center;
     background-size: 100%;
 
 }
 .down_icon{
     position: absolute;
-    width: 26px;
-    height: 26px;
+    width: 34px;
+    height: 34px;
     cursor: pointer;
     background: url("../images/shangfan.png") no-repeat center center;
     background-size: 100%;
