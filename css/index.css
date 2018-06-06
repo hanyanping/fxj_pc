@@ -50,7 +50,7 @@
 .buttonBox{
     position: fixed;
     left: 36%;
-    bottom: 56px;
+    bottom: 66px;
     z-index: 100;
 }
 .push_icon{
@@ -174,9 +174,8 @@
 
 .w{
     width: 100%;
-    font-weight: normal;
     font-stretch: normal;
-    letter-spacing: 13px;
+    letter-spacing: 8px;
     color: #ffffff;
     font-weight: 800;
 }
@@ -187,22 +186,22 @@
     width: 13%;
 }
 #brand0{
-    top:73%;
+    top:59%;
     left: 36%;
     /*width: 22.34%;*/
 }
 #brand1{
-    top:73%;
+    top:59%;
     left: 36%;
     /*width: 22.34%;*/
 }
 #brand2{
-    top:73%;
+    top:59%;
     left: 36%;
     /*width: 32.38%;*/
 }
 #brand3{
-    top:73%;
+    top:59%;
     left: 36%;
     /*width: 29.445%;*/
 }
@@ -368,9 +367,9 @@
     -o-transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 div.showFoot{
-    transform: translateY(-70vh);
-    -webkit-transform: translateY(-70vh);
-    -o-transform: translateY(-70vh);
+    transform: translateY(-50vh);
+    -webkit-transform: translateY(-50vh);
+    -o-transform: translateY(-50vh);
 }
 #dowebok .section{
 	width: 100%;

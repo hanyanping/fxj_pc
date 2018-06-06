@@ -2,7 +2,11 @@
 	padding: 0;
 	margin: 0;
 }
-html { font-size: 625%; /* 10 ÷ 16 × 100% = 62.5% */ }
+html { font-size: 625%;
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 overflow: hidden;/* 10 ÷ 16 × 100% = 62.5% */ }
 img {
 	width: 100%;
 	vertical-align: middle;
@@ -22,7 +26,7 @@ li {
 }
 
 body {
-	font-family: pingfangSC,"Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-family:"Microsoft YaHei",pingfangSC,Arial,Helvetica,sans-serif;
 }
 
 .tranY {
@@ -119,10 +123,10 @@ body {
 /*åº•éƒ¨*/
 
 .foot {
-	height: 70vh;
+	/*height: 70vh;*/
 	position: relative;
 	/*min-width: 1100px;*/
-	min-height: 400px;
+	/*min-height: 400px;*/
 }
 
 .foot_top {
@@ -214,8 +218,7 @@ body {
 }*/
 
 .foot_body {
-	height: 41vh;
-	min-height: 260px;
+	height: 30vh;
 	background: #fff;
 	overflow: hidden;
 	border-bottom: #bfbfbf solid .5px;
@@ -237,9 +240,10 @@ body {
 	display: flex;
 	display: -webkit-flex;
 	display: -o-flex;
-	align-items: flex-start;
-	-webkit-align-items: flex-start;
-	-o-align-items: flex-start;
+	/*align-items: flex-start;*/
+	/*-webkit-align-items: flex-start;*/
+	/*-o-align-items: flex-start;*/
+	justify-content: space-between;
 	width: 100%;
 }
 
@@ -261,8 +265,8 @@ body {
 }
 
 .totop img {
-	width: 26px;
-	height: 26px;
+	width: 34px;
+	height: 34px;
 	margin-bottom: 13px;
 	transform: translateY(0%);
 	-webkit-transform: translateY(0%);
@@ -328,10 +332,10 @@ body {
 }
 
 .foot_logo {
-	width: 83px;
-	height: 25px;
+	width: 132px;
+	height: 40px;
 	display: block;
-	margin: 0 auto 50px;
+	margin: 0 auto 30px;
 }
 
 .contact {
@@ -366,24 +370,21 @@ body {
 
 .erweimaCodeText {
 	height: 83px;
-	margin-top: 22px;
+	margin-top: 30px;
 	line-height: 30px;
 	letter-spacing: 0px;
 	color: #05a19a;
+	font-size: 0.14rem;
 }
 
 .foot_middle {
-	float: left;
-	width: 60%;
-	padding: 0 7.5%;
-	display: flex;
-	display: -webkit-flex;
-	justify-content: space-between;
+	/*float: left;*/
+	/*padding: 0 7.5%;*/
 }
 
 .erweimaCode {
-	height: 90px;
-	width: 90px;
+	height: 110px;
+	width: 110px;
 	margin-right: 10px;
 }
 .showMobile{
@@ -434,16 +435,17 @@ body {
         font-size: 18px;
     }
 }*/
-
+.contact p{
+	font-weight: bold;
+}
 .contact p:nth-child(3) {
 	margin-bottom: 55px;
-	font-weight: bold;
 }
 
 .foot ul {
 	color: #05a19a;
-	line-height: 22px;
-	font-size: .13rem;
+	line-height: 25px;
+	font-size: .14rem;
 }
 
 .foot ul li a {
@@ -455,8 +457,8 @@ body {
 }
 
 .foot ul li:first-child {
-	font-size: 16px;
-	margin-bottom: 12px;
+	font-size: 22px;
+	margin-bottom: 26px;
 	font-weight: bold;
 	color: #000;
 	display: inline-block;

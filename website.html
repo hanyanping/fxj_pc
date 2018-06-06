@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>分享家</title>
-    <link href="./images/kefu_hei.png" rel="shortcut icon" />
+    <link href="./images/icon.png" rel="shortcut icon" />
     <script type="text/javascript">
 
     </script>
@@ -25,7 +25,7 @@
                     <img src="./images/logo.png" class="logo_white logo_w">
                 </div>
                 <ul id="menu" class="menu menu1 ">
-                    <li><a id="brandPage" class="menua" href="#"><span class="c-menu__inner">享健康 快分享</span></a></li>
+                    <li><a id="brandPage" class="menua" href="#"><span class="c-menu__inner">享健康 乐分享</span></a></li>
                     <li><a id="explorePage" class="menua" href="#"><span class="c-menu__inner">服务</span></a></li>
                     <li class="hj_story">
                         <a id="productPage" class="menua" href="#"><span class="c-menu__inner">发现</span></a>
@@ -72,7 +72,7 @@
                 <div class="section active">
                     <div class="section_img imgsrc1 load"></div>
                     <div id="brand0" class="brand brand_w tranY">
-                        <p id="word0" class="w ">享健康  快分享</p>
+                        <p id="word0" class="w ">享健康  乐分享</p>
                         <p class="visite" >人人都可得到一份健康保障,让生活更美好</p>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="section_img imgsrc3 load"></div>
                     <div id="brand2" class="brand tranY">
-                        <p data-img="" id="word2" class="w" >此刻他/她正在分享</p>
+                        <p data-img="" id="word2" class="w" >加入我们一起分享</p>
                         <p class="visite " >每分每秒，都有分享家在这里分享一份心意</p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                     <div class="section_img imgsrc4 load"></div>
                     <div id="brand3" class="brand tranY">
                         <p data-img="" id="word3" class="w">分享家简介</p>
-                        <p class="visite" style="margin-top:12px;" >分享家专注于搭建互联网保险营销推广平台，以强大的技术服务能力为平台会员提供定制化健康险产品，通过大数据技术和丰富的营销工具帮助平台会员提升触客、拓客能力。</p>
+                        <p class="visite" style="margin-top:26px;" >分享家专注于搭建互联网保险营销推广平台，以强大的技术服务能力为平台会员提供定制化健康险产品，通过大数据技术和丰富的营销工具帮助平台会员提升触客、拓客能力。</p>
                     </div>
                 </div>
             </div>
@@ -133,14 +133,15 @@
                             <li>商务合作：service@ifxj.com</li>
                             <li>我们的工作时间：周一至周五  9:00-18:00</li>
                         </ul>
-                        <div class="story">
-                            <img src="./images/erweima.png" class="erweimaCode">
-                            <div class="erweimaCodeText">
-                                <p>关注分享家服务号</p>
-                                <p style="margin-top:-14px;">立刻分享美好</p>
-                            </div>
 
+                    </div>
+                    <div class="story">
+                        <img src="./images/erweima.png" class="erweimaCode">
+                        <div class="erweimaCodeText">
+                            <p>关注分享家服务号</p>
+                            <p style="margin-top:-14px;">立刻分享美好</p>
                         </div>
+
                     </div>
                     <div class="contact fb_top">
                         <div class="contactus">
@@ -154,18 +155,14 @@
                 </div>
             </div>
             <div class="foot_bottom">
-                <p>Copyright@2018ifxj.com Inc.All Rights Reserved.深圳分享家科技信息有限公司<br>版权所有 粤ICP备18049260号</p>
+                <p>Copyright © 2018 ifxj.com
+                深圳分享家科技信息有限公司<br>粤ICP备18049260号</p>
             </div>
         </div>
         <div class="showMobile">
-            <div class="foot_left fb_top">
-                <img class="foot_logo" src="./images/logoOne.png">
-                <img src="./images/weixin_hei.png" class="weixinCode">
-            </div>
             <div>
                 <ul class="product">
                     <li>商业合作</li>
-                    <!--<li>联系我们：400-1211-2313</li>-->
                     <li>商务合作：service@ifxj.com</li>
                     <li>我们的工作时间：周一至周五  9:00-18:00</li>
                 </ul>
@@ -176,7 +173,6 @@
                     <p>关注分享家服务号</p>
                     <p style="margin-top:-14px;">立刻分享美好</p>
                 </div>
-
             </div>
             <div class="totop">
                 <img src="./images/fanhuidingbu.png">
@@ -184,11 +180,10 @@
                 <p>顶部</p>
             </div>
             <div class="foot_bottom">
-                <p>Copyright@2018ifxj.com Inc.All Rights Reserved.深圳分享家科技信息有限公司<br>版权所有 粤ICP备18049260号</p>
+                <p>Copyright © 2018 ifxj.com
+                深圳分享家科技信息有限公司<br>粤ICP备18049260号</p>
             </div>
         </div>
-
-
     </div>
 </div>
 
@@ -201,6 +196,9 @@
 
 <script type="text/javascript">
     // home page tab track $pageview
+    document.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+    }, false);
     window.addEventListener('hashchange',function(e) {
         if (location.pathname == '/') {
             // set home page hash's PageCategory3
@@ -258,7 +256,7 @@
             return isPc
         }
         var device = browserRedirect();
-        var arrData = [{"name":"nike",'title': '刚分享了一个健康保健XX险','icon':'./images/kefu_hei.png'},{"name":"nike",'title': '刚分享了一个健康保健XX险','icon':'./images/kefu_hei.png'}];
+        var arrData = [{"name":"nike",'title': '刚分享了一个健康保健XX险','icon':'./images/icon1.png'},{"name":"nike",'title': '刚分享了一个健康保健XX险','icon':'./images/icon2.png'},{"name":"nike",'title': '刚分享了一个健康保健XX险','icon':'./images/icon3.png'},{"name":"nike",'title': '刚分享了一个重疾险','icon':'./images/icon4.png'}];
         var str = '';
         for(let i in arrData){
             str+= '<li>' +
@@ -335,6 +333,7 @@
         var num = 0;
 
         if(device == 0){
+            $(".bar").css("display","none");
             $(".showMobile").css("display",'block')
             $(".showPc").css("display",'none')
             $(".listData").css("display",'none');
@@ -402,7 +401,6 @@
                             return;
                         }
                         if (num == secNum) {
-                            console.log(num,secNum)
                             $('#dowebok').removeClass('showFoot');
                             $('.totop').removeClass('totopAnimate');
                             $('.push_icon').show();
@@ -417,10 +415,8 @@
                     pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
                     if(num == 2){
                         $(".paging").css({"color":"#232323"})
-                        $(".logo_white ").attr("src",'./images/logoOne.png')
                     }else{
                         $(".paging").css({"color":"#fff"})
-                        $(".logo_white ").attr("src",'./images/logo.png')
                     }
                     if(pagingMoveData<0){
                         pagingMoveData = 0;
@@ -605,11 +601,16 @@
                 $('.head').removeClass('black');
             }
             if(num == 2){
+
                 $(".paging").css({"color":"#232323"});
-                $(".logo_white ").attr("src",'./images/logoOne.png')
+                if(device == 1){
+                    $(".logo_white ").attr("src",'./images/logoOne.png')
+                }
             }else{
                 $(".paging").css({"color":"#fff"})
-                $(".logo_white ").attr("src",'./images/logo.png')
+                if(device == 1){
+                    $(".logo_white ").attr("src",'./images/logo.png')
+                }
             }
             pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
             if(pagingMoveData<0){
@@ -647,10 +648,15 @@
             }, 1000);
             if(num == 2){
                 $(".paging").css({"color":"#232323"})
-                $(".logo_white ").attr("src",'./images/logoOne.png')
+                if(device == 1){
+                    $(".logo_white ").attr("src",'./images/logoOne.png')
+                }
             }else{
                 $(".paging").css({"color":"#fff"})
-                $(".logo_white ").attr("src",'./images/logo.png')
+                if(device == 1){
+                    $(".logo_white ").attr("src",'./images/logo.png')
+                }
+
             }
             pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
             if(pagingMoveData<0){
