@@ -523,7 +523,7 @@
                     console.log(num);
                     var time;
 
-                    if(num == 1){
+                    if(num == 1 || num == 2){
                         time = 200;
                     }else{
                         time = 500;
@@ -572,14 +572,22 @@
                     }, 500);
                     $('.down_icon').show();
                     pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
+                    console.log("num"+num)
                     if(num == 2){
                         setTimeout(function () {
                             $(".logo_white ").attr("src",'./images/logoOne.png')
                         }, 500);
                         $(".paging").css({"color":"#717070"})
                     }else{
-                        $(".paging").css({"color":"#fff"})
-                        $(".logo_white ").attr("src",'./images/logo.png')
+                        if(num == 3){
+                            setTimeout(function () {
+                                $(".logo_white ").attr("src",'./images/logo.png')
+                            }, 500);
+                            $(".paging").css({"color":"#fff"})
+                        }else{
+                            $(".paging").css({"color":"#fff"})
+                            $(".logo_white ").attr("src",'./images/logo.png')
+                        }
                     }
                     if(pagingMoveData<0){
                         pagingMoveData = 0;
@@ -623,11 +631,19 @@
                 $(".paging").css({"color":"#717070"});
                 setTimeout(function(){
                     $(".logo_white ").attr("src",'./images/logoOne.png')
-                },300)
+                },400)
 
             }else{
-                $(".paging").css({"color":"#fff"})
-                $(".logo_white ").attr("src",'./images/logo.png')
+                if(num == 3){
+                    setTimeout(function(){
+                        $(".logo_white ").attr("src",'./images/logo.png')
+                    },400)
+                    $(".paging").css({"color":"#fff"})
+                }else{
+                    $(".paging").css({"color":"#fff"})
+                    $(".logo_white ").attr("src",'./images/logo.png')
+                }
+
             }
             $(".menu li").eq(num).addClass('current').siblings().removeClass('current')
             pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
@@ -668,12 +684,17 @@
                     }
                 }, 500);
                 $(".paging").css({"color":"#717070"});
-
             }else{
-                $(".paging").css({"color":"#fff"})
-                if(device == 1){
+                if(num == 3){
+                    setTimeout(function () {
+                        $(".logo_white ").attr("src",'./images/logo.png')
+                    }, 500);
+                    $(".paging").css({"color":"#fff"})
+                }else{
+                    $(".paging").css({"color":"#fff"})
                     $(".logo_white ").attr("src",'./images/logo.png')
                 }
+
             }
             pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
             if(pagingMoveData<0){
@@ -708,7 +729,7 @@
             setTimeout(function () {
                 isMoving = true;
             }, 1000);
-
+            console.log(num)
             if(num == 2){
                 $(".paging").css({"color":"#717070"})
                 if(device == 1){
@@ -717,11 +738,17 @@
                     }, 200);
                 }
             }else{
-                $(".paging").css({"color":"#fff"})
-                if(device == 1){
-                    $(".logo_white ").attr("src",'./images/logo.png')
+                if(num == 1){
+                    setTimeout(function () {
+                        $(".logo_white ").attr("src",'./images/logo.png')
+                    }, 200);
+                    $(".paging").css({"color":"#fff"})
+                }else{
+                    $(".paging").css({"color":"#fff"})
+                    if(device == 1){
+                        $(".logo_white ").attr("src",'./images/logo.png')
+                    }
                 }
-
             }
             pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
             if(pagingMoveData<0){
