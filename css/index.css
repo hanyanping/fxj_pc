@@ -48,7 +48,7 @@
 /*//右边阴影*!*!*/
 }
 .buttonBox{
-    position: fixed;
+    position: absolute;
     left: 36%;
     bottom: 66px;
     z-index: 100;
@@ -502,7 +502,7 @@ div.showFoot{
     overflow: hidden;
 }*/
 .listData{
-    position: fixed;
+    position: absolute;
     width: 30%;
     color: #05a19a;
     font-size: 14px;

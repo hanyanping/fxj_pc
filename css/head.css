@@ -60,7 +60,7 @@
 }
 .paging {
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     z-index: 11;
     bottom: 40px;
     left: 35px;
@@ -302,7 +302,7 @@
     }
 }
 .bar{
-    position: fixed;
+    position: absolute;
     bottom: 40px;
     right:31px;
     z-index: 99;
