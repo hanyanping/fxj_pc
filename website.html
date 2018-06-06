@@ -627,6 +627,11 @@
                 $('.head').removeClass('black');
             }
             console.log(index)
+            if(num == 0){
+                $(".down_icon").hide()
+            }else{
+                $(".down_icon").show()
+            }
             if(index == 2){
                 $(".paging").css({"color":"#717070"});
                 setTimeout(function(){
