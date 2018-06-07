@@ -15,6 +15,11 @@
     <script src="./js/jquery-1.8.3.min.js"></script>
     <script src="./js/com.js"></script>
     <link rel="stylesheet" href="./css/index.css?v=1.0">
+    <script>
+        $(document).ready(function(){
+            // window.location.href = 'www.baidu.com'
+        })
+    </script>
 </head>
 <body>
 <div id="scrollBox">
@@ -235,7 +240,7 @@
                 marginTop: '-72px',
             },1000,function(){
                 $(this).css({marginTop : "0px"});
-                var li  =$(obj).find('ul').children().first().clone()
+                var li  =$(obj).find('ul').children().first().clone();
                 $(obj).find('ul li:last').after(li );
                 $(obj).find('ul li').eq(1).animate({
                     opacity: 0
@@ -265,7 +270,7 @@
     $(function(){
 
         var device = browserRedirect();
-        var arrData = [{"name":"青蛙王子",'title': '刚加入了我们','icon':'./images/icon1.png'},{"name":"everything",'title': '刚加入了我们','icon':'./images/icon2.png'},{"name":"nike3",'title': '刚分享了一个健康保健XX险','icon':'./images/icon3.png'},{"name":"nike4",'title': '刚分享了一个重疾险','icon':'./images/icon4.png'}];
+        var arrData = [{"name":"青蛙王子",'title': '刚加入了我们','icon':'./images/icon1.png'},{"name":"everything",'title': '刚加入了我们','icon':'./images/icon2.png'},{"name":"nike3",'title': '刚分享了一个健康保健XX险','icon':'./images/icon3.png'},{"name":"nike4",'title': '刚分享了一个重疾险','icon':'./images/icon4.png'},{"name":"nike4",'title': '刚分享了一个重疾险','icon':'./images/icon4.png'}];
         var str = '';
         for(let i in arrData){
             str+= '<li>' +
@@ -277,7 +282,7 @@
                 '</li>'
         }
         $(".listUl").append($(str));
-        // setInterval('autoScroll("#news")',2000);
+        setInterval('autoScroll("#news")',2000);
         var height = (parseInt(($(document.body).height()) -( $(".listData").height())))/2+'px';
         $(".listData").css("top",height)
         $(".weixinCode").mouseenter(function(){
