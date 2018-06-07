@@ -92,13 +92,7 @@
                             <ul class="listUl"  style="margin-top:0!important">
                             </ul>
                     </div>
-                    <div class="listMobileData">
-                        <!--<div  class="shodowBox" ></div>-->
-                        <div direction="up" loop="-1" height="100" hspace="10">
-                            <ul class="listUl"  style="margin-top:0!important">
-                            </ul>
-                        </div>
-                    </div>
+
                     <div class="section_img imgsrc3 load"></div>
                     <div id="brand2" class="brand tranY">
                         <p data-img="" id="word2" class="w" >加入我们一起分享</p>
@@ -271,7 +265,7 @@
     $(function(){
 
         var device = browserRedirect();
-        var arrData = [{"name":"nike1",'title': '刚分享了一个健康保健XX险','icon':'./images/icon1.png'},{"name":"nike2",'title': '刚分享了一个健康保健XX险','icon':'./images/icon2.png'},{"name":"nike3",'title': '刚分享了一个健康保健XX险','icon':'./images/icon3.png'},{"name":"nike4",'title': '刚分享了一个重疾险','icon':'./images/icon4.png'}];
+        var arrData = [{"name":"青蛙王子",'title': '刚加入了我们','icon':'./images/icon1.png'},{"name":"everything",'title': '刚加入了我们','icon':'./images/icon2.png'},{"name":"nike3",'title': '刚分享了一个健康保健XX险','icon':'./images/icon3.png'},{"name":"nike4",'title': '刚分享了一个重疾险','icon':'./images/icon4.png'}];
         var str = '';
         for(let i in arrData){
             str+= '<li>' +
@@ -283,7 +277,7 @@
                 '</li>'
         }
         $(".listUl").append($(str));
-        setInterval('autoScroll("#news")',2000);
+        // setInterval('autoScroll("#news")',2000);
         var height = (parseInt(($(document.body).height()) -( $(".listData").height())))/2+'px';
         $(".listData").css("top",height)
         $(".weixinCode").mouseenter(function(){
