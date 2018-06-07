@@ -135,7 +135,6 @@
     width: 42px;
     height:42px;
 }
-/*å¤´éƒ¨èœå•è§¦å‘äº‹ä»¶*/
 .c-menu__inner{
     position: relative;
 }
@@ -367,7 +366,7 @@ bar_list2:hover{
     height:0;
     border-width:5px 0 5px 5px;
     border-style:solid;
-    border-color:transparent transparent transparent #fff;/*透明 透明 透明 灰*/
+    border-color:transparent transparent transparent #fff;
     position:absolute;
     top:20px;
     right: -5px;
