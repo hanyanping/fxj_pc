@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="681d8a12-a169-46c5-8e1e-1a0d2fef969c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/head.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/head.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/P-logo.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/com.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/com.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website.html" beforeDir="false" afterPath="$PROJECT_DIR$/website.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,11 +49,10 @@
       <file leaf-file-name="com.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/com.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+            <state relative-caret-position="25">
+              <caret line="281" column="23" selection-start-line="281" selection-start-column="23" selection-end-line="281" selection-end-column="23" />
               <folding>
                 <element signature="n#!!block;n#autoScroll#0" />
-                <element signature="e#3231#20313#0" />
                 <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -122,8 +116,8 @@
       <find>autoScroll</find>
       <find>.listData</find>
       <find>fimg</find>
-      <find>showPc</find>
       <find>consol</find>
+      <find>showPc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,6 +166,11 @@
             <path>
               <item name="fxj_web_pc" type="b2602c69:ProjectViewProjectNode" />
               <item name="fxj_web_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fxj_web_pc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxj_web_pc" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -214,12 +213,12 @@
       <workItem from="1528160821885" duration="19135000" />
       <workItem from="1528247910239" duration="25725000" />
       <workItem from="1528334215106" duration="2221000" />
-      <workItem from="1528337335206" duration="3915000" />
+      <workItem from="1528337335206" duration="4806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65790000" />
+    <option name="totallyTimeSpent" value="66681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -507,11 +506,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/com.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        <state relative-caret-position="25">
+          <caret line="281" column="23" selection-start-line="281" selection-start-column="23" selection-end-line="281" selection-end-column="23" />
           <folding>
             <element signature="n#!!block;n#autoScroll#0" />
-            <element signature="e#3231#20313#0" />
             <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
           </folding>
         </state>

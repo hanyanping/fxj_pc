@@ -237,6 +237,9 @@ $(function(){
                 }
                 setTimeout(function () {
                     isMoving = true;
+				},1000)
+                setTimeout(function () {
+
                     pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
                     if(num == 2){
                         $(".paging").css({"color":"#717070"})
@@ -276,7 +279,7 @@ $(function(){
                 setTimeout(function () {
                     isMoving = true;
 
-                }, 500);
+                }, 1000);
                 $('.down_icon').show();
                 pagingMoveData = ( num > MaxLens ) ? pagingMoveData = $pagingArea.height()*MaxLens : pagingMoveData = $pagingArea.height()*num;
                 if(num == 2){
