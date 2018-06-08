@@ -303,7 +303,7 @@
 .bar{
     position: absolute;
     bottom: 40px;
-    right:31px;
+    right:35px;
     z-index: 99;
 }
 .bar_box{
