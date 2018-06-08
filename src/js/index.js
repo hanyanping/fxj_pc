@@ -30,25 +30,6 @@ $(function(){
 document.addEventListener('touchmove', function(event) {
     event.preventDefault();
 }, false);
-window.addEventListener('hashchange',function(e) {
-    if (location.pathname == '/') {
-        // set home page hash's PageCategory3
-        setHomeHashPageCategory3();
-        var param_data = getParamData();
-        param_data['$url'] = location.href;
-        param_data['$url_path'] = location.pathname;
-        param_data['$title'] = document.title;
-
-        var referrer = "string"==typeof document.referrer?document.referrer.slice(0,100):"";
-        var reg = /^http(s)?:\/\/(.*?)\//;
-        var referrer_host = referrer ? reg.exec(referrer)[2] : "";
-
-        param_data['$referrer'] = referrer;
-        param_data['$referrer_host'] = referrer_host;
-
-        sa.track('$pageview', param_data);
-    }
-},false);
 $(window).resize(function() {
     var width = $(this).width();
     var height = $(this).height();
