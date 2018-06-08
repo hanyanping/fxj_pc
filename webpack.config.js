@@ -94,11 +94,8 @@ module.exports = {
 						},
 						gifsicle: {
 							interlaced: false,
-						},
-						// the webp option will enable WEBP
-						webp: {
-							quality: 75
 						}
+						
 					}
 				}]
 			},
