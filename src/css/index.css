@@ -413,7 +413,7 @@ div.showFoot{
     position:fixed;
     background: rgba(255, 255, 255,0);
     z-index: 10;
-    box-shadow: 2px -10px 7px  #fff ;;//边框阴影
+    box-shadow: 2px -10px 7px  #fff ;
 }
 .listData ul li ,.listMobileData ul li{
     padding: 14px 0;

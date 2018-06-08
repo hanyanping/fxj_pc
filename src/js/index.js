@@ -1,3 +1,6 @@
+require('../css/common.css')
+require('../css/head.css')
+require('../css/index.css')
 $(function(){
 	var t;
 	$('.hj_art').mouseenter(function(){
