@@ -9,7 +9,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
 	// 配置入口
 	entry: {
-		index: './src/js/index.js',
+		index: './src/js/index.js'
 	},
 	// 配置出口
 	output: {
@@ -115,8 +115,22 @@ module.exports = {
 			}
 		]
 	},
+	optimization: {
+        runtimeChunk: {
+            name: "runtime"
+        },
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "vendor",
+                    chunks: "initial",
+                    minChunks: 2
+                }
+            }
+        }
+    },
 	plugins: [
-
 		new UglifyJsPlugin(), //压缩js
 		//抽离css
 		new ExtractTextPlugin({
@@ -154,14 +168,13 @@ module.exports = {
 			filename: __dirname + '/dist/index.html',
 			inject: 'head',
 			template: 'html-withimg-loader!' + __dirname + "/src/index.html",
-			chunks: ['index'],
+			chunks: ['index','vendor','runtime'],
 			inlineSource: '.(js|css)$',
 			minify: {
 				removeComments: true, //删除注释
 				collapseWhitespace: true //删除空格
 			}
 		}),
-		
 		new webpack.ProvidePlugin({
 			$: "jquery",
 			jQuery: "jquery",
