@@ -197,7 +197,7 @@ module.exports = {
 		historyApiFallback: true,
 		inline: true,
 		hot: true,
-		port: 8100,
-		host: '127.0.0.1', //可以设置为本机局域网IP地址，方便内网测试
+		// port: 8100,
+		host: '10.2.8.176', //可以设置为本机局域网IP地址，方便内网测试
 	}
 }

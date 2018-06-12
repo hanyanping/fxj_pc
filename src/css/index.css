@@ -138,19 +138,19 @@
 }
 .imgsrc1{
     background: url(../images/beijing_1.png) no-repeat center center;
-    background-size: auto 100% ;
+    background-size: cover ;
 }
 .imgsrc2{
     background: url(../images/beijing_2.png) no-repeat center center;
-    background-size: auto 100% ;
+    background-size: cover;
 }
 .imgsrc3{
     background: url(../images/beijing_3.png) no-repeat center center;
-    background-size: auto 100% ;
+    background-size: cover;
 }
 .imgsrc4{
     background: url(../images/beijing_4.png) no-repeat center center;
-    background-size: auto 100% ;
+    background-size:cover ;
 }
 .w{
     width: 100%;
