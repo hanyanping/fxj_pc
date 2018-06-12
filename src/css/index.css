@@ -138,19 +138,19 @@
 }
 .imgsrc1{
     background: url(../images/beijing_1.png) no-repeat center center;
-    background-size: 100% 100% ;
+    background-size: auto 100% ;
 }
 .imgsrc2{
     background: url(../images/beijing_2.png) no-repeat center center;
-    background-size: 100% 100% ;
+    background-size: auto 100% ;
 }
 .imgsrc3{
     background: url(../images/beijing_3.png) no-repeat center center;
-    background-size: 100% 100% ;
+    background-size: auto 100% ;
 }
 .imgsrc4{
     background: url(../images/beijing_4.png) no-repeat center center;
-    background-size: 100% 100% ;
+    background-size: auto 100% ;
 }
 .w{
     width: 100%;
@@ -235,7 +235,6 @@
         transform: translateZ(0);
     }
 }
-
 .brand_w .d{
     transform: translateZ(0);
     animation:fadeInUp 1s .75s ease both;
