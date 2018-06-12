@@ -44,7 +44,12 @@ $(window).resize(function() {
         // })
     }
 });
-
+$(document).ready(function(){
+    var device =  browserRedirect();
+    if(device == 0){
+        window.location.href = 'http://devm.ifxj.com/#'
+    }
+})
 function browserRedirect() {//设备判断
     var sUserAgent = navigator.userAgent.toLowerCase();
     var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
